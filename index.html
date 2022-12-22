@@ -1,0 +1,364 @@
+<html>
+    <head>
+      <title>
+        PEG UNIVERSITY
+      </title>
+      <style>
+     
+
+.bg-img {
+   
+  background-image: url("img/img1.jpg"); 
+   width:100%;
+   height:95%;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  width: 100%;
+}
+.topnav { 
+  float:right;
+  
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  margin: 18px 16px ;
+  margin-right: 23px;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius:51px;
+}
+.topnav a.active {
+  background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);
+  color:white;
+}
+.topnav a:hover {
+  background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);
+  color: white;
+}
+.text-block {
+  position: absolute;
+  top:190px;
+  bottom: 320px;
+  left: 66px;
+  color: white;
+  font-family: Garamond, serif;
+  font-size:28px;
+  line-height:2 cm;
+}
+<!--slideshow-->
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ 
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ 
+footer {
+  text-align: center;
+  height:50%;
+  margin-top:233px;
+  background-color: black;
+  color: white;
+}
+<!--dropdownstudents-->
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 16px;
+  margin-top:60px;
+  border-radius:15%;
+  box-shadow: 100px 8px 106px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+ float:left;
+  text-decoration: none;
+  display: block;
+}
+ 
+
+<!-- dropdownevents-->
+.dropdown-content-events a:hover {background-color: #ddd;}
+.dropdownevnts:hover .dropdown-content-events{display: block;}
+.dropdownevnts:hover .dropbtnents {background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);}
+.dropdownevnts {
+  position: relative;
+  display: inline-block;
+}  
+.dropdown-content-events {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 16px;
+  margin-top:60px;
+  border-radius:15%;
+  box-shadow: 100px 8px 106px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-events a {
+  color: black;
+ float:left;
+  text-decoration: none;
+  display: block;
+}
+ 
+
+<!-- dropdownacadem-->
+.dropdown-content-academics a:hover {background-color: #ddd;}
+.dropdownacademics:hover .dropdown-content-academics{display: block;}
+.dropdownacademics:hover .dropbtnacademics {background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);}
+.dropdownacademics {
+  position: relative;
+  display: inline-block;
+}  
+.dropdown-content-academics {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 16px;
+  margin-top:60px;
+  border-radius:15%;
+  box-shadow: 100px 8px 106px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-academics a {
+  color: black;
+ float:left;
+  text-decoration: none;
+  display: block;
+}
+
+
+<!-- dropdownabout-->
+.dropdown-content-abou a:hover {background-color: #ddd;}
+.dropdownabout:hover .dropdown-content-about{display: block;}
+.dropdownabout:hover .dropbtnabout{background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);}
+.dropdownabout{
+  position: relative;
+  display: inline-block;
+}  
+.dropdown-content-about {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 16px;
+  margin-top:60px;
+  box-shadow: 100px 8px 106px 0px rgba(0,0,0,0.2);
+  border-radius:15%;
+  z-index: 1;
+}
+
+.dropdown-content-about a {
+  color: black;
+ float:left;
+  text-decoration: none;
+  display: block;
+}
+</style>
+      
+    </head>
+    <body>
+        <div class="bg-img">
+            <!--image header-->
+            <div class="container">
+                <h1 style="color:#717978;margin-left:66px;float:left;">PEG UNIVERSITY</h1>
+              <div class="topnav">
+                 
+                
+                <a class="active" href ="#home" >HOME</a>  
+                <a href="sign-in.html">SIGN-IN</a>
+                <a href="sign-in.html">SIGN-UP</a>
+                 <!--dropdown std-->
+                 <div class="dropdown"> 
+                  <a href="#std" class="dropbtn">PROFILE</a>
+                    <div class="dropdown-content">
+                       <a href="marks.php">Marks</a>
+                    <a href="achievements.php">Achievements</a>
+                    <a href="attendance.php">Attendance</a>
+                    
+                  </div>
+                </div>
+                <!--students-->
+
+                 <!--dropdown events-->
+                 <div class="dropdownevnts"> 
+                  <a href="#events" class="dropbtnents">EVENTS</a>
+                    <div class="dropdown-content-events">
+                       <a href="events.html">Ongoing</a>
+                    <a href="events.html">Sports</a>   
+                  </div>
+                </div>
+                <!--events-->
+  
+                 <!--dropdown academics-->
+                <div class="dropdownacademics"> 
+                  <a href="#academics" class="dropbtnacademics">ACADEMICS</a>
+                    <div class="dropdown-content-academics">
+                       <a href="sylstaff.html">Syllabus</a>
+                    <a href="sylstaff1.php">Staffs</a>   
+                  </div>
+                </div>
+                <!--academics-->
+                 
+                 <!--dropdown about-->
+                 <div class="dropdownabout"> 
+                  <a href="#about" class="dropbtnabout">ABOUT</a>
+                    <div class="dropdown-content-about">
+                       <a href="#foo">Contact</a>
+                    <a href="#fac">Facilities</a>   
+                  </div>
+                </div>
+                <!--about-->
+                 
+ 
+               
+
+              </div>
+              <div class="text-block">
+                <h1 style="letter-spacing:4px" >GREAT PLACE FOR <br>EDUCATION</h1>
+                <p>A community of lifelong learners,<br> responsible global citizens<br> and champions of our own success.</p>
+                <hr style="width:55%; margin-top:50px;margin-left:0;">
+              </div>
+            </div>
+        </div>
+        <!--slideshow-->
+        <div class="slideshow-container" id="fac">
+            <div class="mySlides fade">  
+                <h1 style="text-align:center;font-family: Garamond, serif;padding-top:24px;font-size:44px;">Our Achievements</h1>
+                <p style="font-size:23px;text-align:center;line-height:1cm;">Athrav Arora,the young student of Mount Abu Public School was recognised by the World Book of <br> Records, London as the youngest TedEx Speaker. His extraordinary oratory skills and presentation on <br>"Kids My Age and Sustainable Development Goals" at Ted Ex at Mount Abu School mesmerized<br> all making him the youngest TedEx Speaker at the age of 5 years 2 months and 14 days.<br> Heartiest Congratulations to this Child Prodigy!!</p>
+            </div>
+            <div class="mySlides fade"> 
+                <h1 style="text-align:center;font-family: Garamond, serif;padding-top:24px;font-size:44px;">Our School Students feedback</h1>
+                <p style="font-size:23px;text-align:center;line-height:1cm;">The place where we get education is called the school building. <br>The healthy, neat, clean and beautiful school building shows the quality of education and discipline in the school.</p>
+            </div>
+            <div class="mySlides fade">  
+                <h1 style="text-align:center;font-family: Garamond, serif;padding-top:24px;font-size:44px;">Our Infrastructure</h1>
+                <p style="font-size:23px;text-align:center;line-height:1cm;">here should be good ventilation in all the classrooms along with facilities<br> like fans, lights, benches, chairs, backboard, etc.<br> There should also be facilities such as laboratories, art and crafts workshops,<br> multimedia room, school office, theatre and many more.</p>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+            </div>
+            <!--para-->
+            <div style="margin-top:130px;">    
+                <p><img src="img\img2.jpg" alt="Students" style="width:35%;height:40%;float:left; "><p style="font-size:23px;line-height:1cm;"><br>In this the students are very comfortable to do their own activities and they can use the facilities available in school for free.The resources also available for free.</p>
+                <p style="font-size:23px;line-height:1cm;">They can use the  laboratories when they want to .They can upskill their knowledge. We have the world's biggest library in our school.And we have museums .Students can participate in any programs or sports events during their schools days </p>
+            </div>
+           <!--footer-->
+            <div >
+                <footer id="foo">
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:110px;margin-top:60px;">
+                            <li style="font-size:30px;color:#717978;">Contact</li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Email:akk@gmail.com</a></li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Phone:02 8483 4583</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:120px;margin-top:60px;">
+                            <li style="font-size:30px;color:#717978;">Academics</li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Library</a></li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Pay My Tuition</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:120px;margin-top:60px;">
+                            <li style="font-size:30px;color:#717978;">Campus Life</li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Accessibility</a></li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Food Services</a></li>
+                         </ul>
+                    </div>
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:150px;margin-top:60px;">
+                            <li style="font-size:30px;color:#717978;">Our Campus</li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Campus Safety</a></li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Human Resources</a></li>
+                         </ul>
+                    </div> 
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:120px;margin-top:60px;">
+                            <li style="font-size:30px;color:#717978;">Follow us</li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Facebook</a></li><br>
+                            <li style="font-size:18px;text-decoration:none;"><a href="#" style="color:white;">Twitter</a></li>
+                         </ul>
+                    </div> 
+                    <div>
+                        <ul style="float:left;list-style-type:none;margin-left:700px;margin-top:60px;">
+                            
+                            <li style="font-size:18px;text-decoration:none;margin-top:60px;"><a href="#" style="color:white;">Copyright All Right Reserved 2022</a></li>
+                             
+                         </ul>
+                    </div> 
+                  </footer>
+            </div>
+             
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    </body>
+</html>

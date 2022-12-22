@@ -1,1 +1,1 @@
-# School-management
+A school management system is a platform created to facilitate the smooth functioning of your institution by digitising and automating a variety of academic and administrative processes.Here I'm going to do my school management project(Website Page) using HTML, CSS, PHP. It shows the output like webpage of the complete details of school management. In this project first I'm done front page/login page continuing with the sign-in options using HTML/CSS code. After completing my coding part it gives an complete output of an school management website.

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+</body><!DOCTYPE html>
+<html>
+<head>
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+<style>
+    body{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'EB Garamond', serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(img/img8.jpg);
+       width:100%;
+        height:100%;
+         background-position: center;
+        background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+    }
+.main{
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+#chk{
+    display: none;
+}
+.signup{
+    position: relative;
+    width:100%;
+    height: 100%;
+    font-family: 'EB Garamond', serif;
+}
+label{
+    color: #000;
+    font-size: 2em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    font-family: 'EB Garamond', serif;
+}
+input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #000;
+    background:linear-gradient(to bottom right, #ff33cc 14%, #ff9933 101%);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    font-family: 'EB Garamond';
+}
+button:hover{
+    color:white;
+}
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+    font-family: 'EB Garamond', serif;
+}
+.login label{
+    color:#000;
+    transform: scale(.6);
+    font-family: 'EB Garamond', serif;
+    font-size:2em;
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+    transform: scale(1);    
+}
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
+
+</style>
+</head>
+<body>
+    <div class="main">      
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form action="connect.php" method="post">
+                    <label for="chk" aria-hidden="true">REGISTER</label>
+                    <input type="text" style="font-family:cursive" name="username" placeholder="User name" required="">
+                    <input type="email" style="font-family:cursive" name="email" placeholder="Email" required="">
+                    <input type="password" style="font-family:cursive"  name="password" placeholder="Password" required="">
+                    <div><a href="#" style="text-decoration:none;"><button type="submit" style=font-family:cursive>SIGN-UP</button></a></div>
+                </form>
+            </div>
+
+            <div class="login">
+                <form action="connect1.php" method="post">
+                    <label for="chk" aria-hidden="true">LOGIN</label>
+                    <input type="email" style="font-family:cursive"  name="email" placeholder="Email" required="">
+                    <input type="password" style="font-family:cursive"  name="pswd" placeholder="Password" required="">
+                    <div><a href="#" style="text-decoration:none;"><button type="submit" style=font-family:cursive>LOGIN</button></a></div>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
+</html>
